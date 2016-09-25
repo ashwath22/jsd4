@@ -9,7 +9,7 @@
 function calcLongestSide(a,b){
 	var hypotenuse= Math.sqrt(Math.pow(a,2)+Math.pow(b,2));
 	console.log(hypotenuse);
-	return hypotenuse;
+	return c;
 }
 
 function calcCircumference(radius){
