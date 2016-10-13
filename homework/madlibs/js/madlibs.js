@@ -58,7 +58,6 @@ function saveFavorite() {
 
 	// TODO: add the new idea to the array
 	favorites.push(startupIdea);
-	console.log(favorites);
 }
 
 
