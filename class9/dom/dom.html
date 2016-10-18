@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Your name</title>
+    
+  </head>
+  <body>
+	<h1>lorem</h1>
+	<p>lorem ipsum lorem ipsum </p>
+	<ul>
+		<li>consectetur</li>
+		<li>insidentut</li>
+		<li>exercitation</li>
+		<li>
+			<p>Fish tacos</p>
+			<img width = "100" src = "http://cdn-image.foodandwine.com/sites/default/files/200806-xl-fish-tacos.jpg">
+		</li>
+	</ul>
+
+</body>
+</html>
+	<script>
+	// 2 ways build DOM trees
+
+	// grab html element for javascript to manipulate.
+	var ul = document.querySelector("ul");
+
+	// div.innerHTML = "<h2> more lorem ipsum</h2>";
+	// technique 1: using createElement/appendChild
+	function createMenuItem(){
+		// step 1: create elements
+		var li = document.createElement("li");
+		var p = document.createElement("p");
+		var img = document.createElement("img");
+
+		// step 2: content & attributes
+		p.innerHTML = "Fish Tacos";
+		img.src = "http://cdn-image.foodandwine.com/sites/default/files/200806-xl-fish-tacos.jpg"
+		img.width = "100";
+		// step 3: append new elements to DOM
+		li.appendChild(img);
+		li.appendChild(p);
+
+		ul.appendChild(li);
+		
+		console.log(li);
+	}
+	// technique 2: using innerHTML
+	function createMenuItemTemplate() {
+
+		var li = document.createElement("li");
+		var template = "<p>Beef taco</p>" + "<img src =\"http://cdn-image.foodandwine.com/sites/default/files/200806-xl-fish-tacos.jpg\">";
+		li.innerHTML = template;
+		ul.appendChild(li);
+
+		// console.log(template);
+
+
+	}
+
+    </script>  
+    
+    <style>
+    img {
+    	width: 100px;
+    }
+    </style>
+    

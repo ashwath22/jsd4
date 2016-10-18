@@ -10,7 +10,7 @@ and store it in a variable called `flickerObj`
 */
 
 var flickerObj = JSON.parse(jsonString);
-// console.log(flickerObj);
+console.log(flickerObj);
 
 /*
 Part 2. Iterate (this means 'use a loop') and do a console.log 
@@ -43,11 +43,11 @@ item in the 'links' array.
 // 	// Print details of each photo
 // 	links.push(item.link);
 // }
-console.log(links);
+// console.log(links);
 
 var links = flickerObj.items.map(function(item){
 	return item.link;
-});
+}).map(function(item){});
 
 console.log(links);
 
@@ -63,3 +63,4 @@ var linksJson = JSON.stringify(links);
 console.log(linksJson);
 
 // Valid JSON!! :D
+// 
