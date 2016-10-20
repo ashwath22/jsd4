@@ -8,33 +8,30 @@ var caution = document.querySelector(".control.caution-button");
 // var crazy = document.querySelector(".control.crazy-button");
 
 var timeId = null;
-var flashId = null;
 
 // Structure
 // ----------------------------------------------
 
 function stopLight(){
 	clear();
-	clearTimeout(timeId);
 	console.log("Stop light is on now");
 	light.classList.add('stop');
 }	
 
 function slowLight(){
 	clear();
-	clearTimeout(timeId);
 	console.log("Slow light is on now");
 	light.classList.add('slow');
 }	
 
 function goLight(){
 	clear();
-	clearTimeout(timeId);
 	console.log("Go light is on now");
 	light.classList.add('go');
 }	
 
 function clear(){
+	clearTimeout(timeId);
 	light.classList.remove('stop');
 	light.classList.remove('slow');
 	light.classList.remove('go');	
