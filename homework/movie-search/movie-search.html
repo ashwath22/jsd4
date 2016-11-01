@@ -20,35 +20,33 @@
     	<button type="submit">Search</button>
     </form>
 
-    <div class="details">
-        <div class="image">
-            <img class="poster" src="">
-        </div>
-        <div class="text">
-            <h2 class="title"></h2>
-            <p class="plot"></p>
-            <p><a class="imdb-link" href="http://www.imdb.com/title/">View on IMDb</a></p>
-        </div>
+    <div class="details">   
     </div>
 
-    <script id="restaurantTemplate" type="text/x-handlebars-template">
-        {{#each restaurants}}   
-            <li>
-                <img src="{{image_url}}">
-                <h2>{{name}}</h2>
-                <p>{{address}}</p>
-                    
-                <a href= "{{reserve_url}}"> Make a reservation</a>
+    <ul class="results">
+    </ul>
+
+    <script id="movieResults" type="text/x-handlebars-template">
+        {{#each Search}}   
+            <li id="{{imdbID}}">
+                <img src="{{Poster}}">
+                <p>{{Title}}</p>
             </li>
         {{/each}}   
     </script>
 
-    <ul class="results">
-        <li>
-            <img>
-            <p></p>
-        </li>
-    </ul>
+    <script id="movieDetails" type="text/x-handlebars-template">
+        <div class="image">
+            <img class="poster" src="{{Poster}}">
+        </div>
+        <div class="text">
+            <h2 class="title">{{Title}}</h2>
+            <p class="plot">{{Plot}}</p>
+            <p><a class="imdb-link" href="http://www.imdb.com/title/{{imdbID}}">View on IMDb</a></p>
+        </div>
+    </script>
+
+
 
 </main>
 
@@ -60,37 +58,43 @@
 
 
     <p class="question">1. What kind of Event on a form Element makes it so hitting the return key in a text box works?</p>
-    <p class="answer"></p>
+    <p class="answer">submit</p>
 
 
     <p class="question">2. What are two types of Events that are cancellable?</p>
-    <p class="answer">     </p>
+    <p class="answer">submit, click</p>
 
 
     <p class="question">3. When using the OMDB API's search endpoint, what is the property name for the array of movie objects? Remember, JavaScript is case sensitive.</p>
-    <p class="answer">     </p>
+    <p class="answer">Search</p>
 
 
     <p class="question">4. What is the full URL to make a request to the OMDB API's movie details endpoint for the movie Gladiator by its ID?</p>
-    <p class="answer">     </p>
+    <p class="answer">http://www.omdbapi.com/?i=tt0172495</p>
 
 
     <p class="question">5. What are two different techniques to set the ID attribute to "tt0319343" for an Element?</p>
-    <p class="answer">     </p>
+    <p class="answer">
+        var li = document.querySelector("li");
+        li.setAttribute("id", "tt0319343");
+
+        var li = document.querySelector("li");
+        li.id = "tt0319343"
+    </p>
 
 
     <p class="question">6. When using the OMDB API's movie details endpoint, what data type is the "Genre" property?</p>
-    <p class="answer">     </p>
+    <p class="answer">String</p>
 
 
     <p class="question">7. How could you convert the data in the "Genre" property into an array?</p>
-    <p class="answer">     </p>
+    <p class="answer">var ar = JSON.parse(Genre)</p>
 
 
 </aside>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
 <script src="js/movieSearch.js"></script>
 </body>
 </html>

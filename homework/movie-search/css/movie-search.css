@@ -1,7 +1,6 @@
 /* Layout */
 /* -------------------------------- */
 body {
-	background: #F8DFA2;
 	min-width: 320px;
 	max-width: 375px;
 }
@@ -11,24 +10,24 @@ body {
 /* -------------------------------- */
 body,
 button {
-	font-family: "AvenirNext-Regular", sans-serif;
-	color: #905B50;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #696969;
 }
 h1,
 button {
-	font-family: "Limelight", "AvenirNext-Regular", sans-serif;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 a,
 a:visited,
 a:hover,
 a:active {
-	color: #AA353B;
+	color: #FF1493;
 }
 
 /* Main section */
 /* -------------------------------- */
 main {
-	border: 1px solid #603E3B;
+	border: 1px solid #696969;
 	position: relative;
 	margin: 15px;
 }
@@ -39,7 +38,7 @@ main::before {
 	left: -5px;
 	right: -5px;
 	bottom: -5px;
-	border: 2px solid #603E3B;
+	border: 2px solid #696969;
 	pointer-events: none;
 }
 
@@ -71,20 +70,19 @@ button {
 }
 input {
 	flex: 1;
-	border: 1px solid #905B50;
-	background: #FFFAE5;
+	border: 1px solid #696969;
 }
 input:active,
 input:focus,
 button:focus {
-	box-shadow: 0 0 3px 1px #905B50;
-	border: 1px solid #905B50;
+	box-shadow: 0 0 3px 1px #696969;
+	border: 1px solid #696969;
 }
 button {
-	background: #4F565E;
-	color: #F7DEA1;
-	border: 1px solid #905B50;
-	font-size: 18px;
+	color: white;
+	background: #696969;
+	border: 1px solid #696969;
+	font-size: 12px;
 	line-height: 22px;
 	margin-left: 10px;
 }
@@ -106,6 +104,7 @@ button {
 }
 .details h2 {
 	font-size: 14px;
+	color: 300000;
 }
 .details p {
 	font-size: 12px;
@@ -124,7 +123,7 @@ button {
 	margin: 0 10px;
 }
 .results li {
-	border-top: 1px solid #905B50;
+	border-top: 1px solid #696969;
 }
 .results img {
 	margin-right: 10px;
@@ -133,6 +132,7 @@ button {
 .results p {
 	flex: 1;
 	font-size: 14px;
+	color: 300000;
 }
 
 
