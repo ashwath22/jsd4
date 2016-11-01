@@ -1,0 +1,23 @@
+{
+  "name": "jsd4",
+  "version": "1.0.0",
+  "description": "My first node app to serve up homework and labs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashwath22/jsd4.git"
+  },
+  "author": "ash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashwath22/jsd4/issues"
+  },
+  "homepage": "https://github.com/ashwath22/jsd4#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
