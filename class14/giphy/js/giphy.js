@@ -34,5 +34,6 @@ const gifTemplateFn = Handlebars.compile(gifTemplate.innerHTML);
 // step3: pass JSON into html
 var html = gifTemplateFn(mockData);
 
+// ignore this comment
 // html has all the html we need as a string
 gifs.innerHTML = html;
