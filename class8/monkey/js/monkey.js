@@ -20,6 +20,23 @@ for retrieving properties (dot notation and brackets).
 */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // My code:
 // //constructor
 // var Monkey = function(name, species, foodsEaten){
@@ -52,6 +69,7 @@ var Monkey = function(name, species){
 	this.species = species;
 	this.foodsEaten = [];
 }
+
 //prototype
 
 // If I want to make all monkeys wear a dress, just do Monkey.prototype.dress = 
@@ -68,7 +86,16 @@ Monkey.prototype = {
 		"I like to eat " + this.foodsEaten + ".";
 	}
 
+	dance: function() {
+		console.log("fn dance");
+	}
+
 };
+
+Monkey.prototype.dance = function(){
+	console.log("fn dance");
+}
+
 var monkey1 = new Monkey("tim", "rhesus");
 var monkey2 = new Monkey("tim", "rhesus");
 var monkey3 = new Monkey("tim", "rhesus");

@@ -92,22 +92,31 @@
 */
 
 var numbers =[1,2,3,4];
-// for (var i=0; i<numbers.length; i++){
-// 	numbers[i] = numbers[i] + 1;
-// }
+for (var i=0; i<numbers.length; i++){
+	numbers[i] = numbers[i] + 1;
+}
 
-// console.log(numbers)
+console.log(numbers)
 
 
 
 numbers.forEach(increase);
-
 function increase(number, index) {
 	// total += number;
 	numbers[index] = number + 1;
 }
-
 console.log("New Array: ", numbers);
+
+
+
+
+
+
+
+
+
+
+
 
 
 /**
